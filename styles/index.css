@@ -139,13 +139,11 @@ header {
     font-weight: 500;
     padding: 0.5em 1.5em;
     color: #000;
-    
     background: var(--maincolor);
     border-color: var(--maincolor);
 }
 
 .cta:hover {
-    
     border-color: #ecf0f3;
     background: #ecf0f3;
     box-shadow: 18px 18px 30px #d1d9e6,
@@ -422,7 +420,7 @@ header {
 }
 
 .cta2 {
-    width: 20%;
+    padding: 10px 40px;
     margin: 0 auto;
     background: var(--maincolor);
     color: var(--black);
@@ -522,4 +520,21 @@ header {
     display: none;
     text-align: center;
     transition: 0.5s ease-in;
+}
+
+@media (max-width: 991.98px) {
+    /* make card into 2 columns */
+    .project {
+        flex-direction: column;
+    }
+    .project-pic {
+        width: 100%;
+    }
+    .project-pic:hover {
+        transform: none;
+    }
+    .project-detail {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
