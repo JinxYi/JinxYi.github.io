@@ -1,11 +1,196 @@
+<!--
+    header.html
+    contains top navigation bar
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <!--Keywords for search engine-->
+    <meta name="keywords" content="Software Developer in training, Frontend and Backend Developer">
+    <!--Description of web page-->
+    <meta name="description" content="Tan Jing Yi. Software Developer in training, Frontend and Backend Developer.">
+    <!--Author-->
+    <meta name="author" content="Tan Jing Yi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Font Awescome -->
+    <script src="https://kit.fontawesome.com/cd0a21c0e2.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <!--Import stylesheets-->
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-    Is it working?
+    <section class="above-the-fold">
+        <div class="wrapper">
+            <header>
+                <a class="hide-bar logo" href="#">TanJingYi</a>
+
+                <nav>
+                    <ul class="nav-list">
+                        <!-- <li class="bar"><a href="#"><i class="fas fa-bars"></i></a></li> -->
+                        <li class="nav-item"><a href="#">About Me</a></li>
+                        <li class="nav-item"><a href="#">Projects</a></li>
+                        <li class="nav-item"><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="hero-wrapper">
+                <div class="hero">
+                    <p class="hero-top">
+                        Hi, I am Jing Yi.
+                    </p>
+                    <p class="hero-small">
+                        I am currently a Year 2 student studying Software Development at Singapore Polytechnic.
+                        
+                    </p>
+                    <a href="#contact"><button class="cta">Contact Me</button></a>
+                </div>
+            </div>
+
+            <div class="animate">
+                <div class="scroll">
+                    <span class="scroll-icon"></span>
+                    <span class="scroll-circle"></span>
+                    <small>See More</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-section">
+        <h4>Skills</h4>
+        <section class="skills-list">
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <!-- <p class="skill-description">I use HTML, CSS, javascript and its frameworks including jQuery and Ajax to make beautiful web user interfaces.</p> -->
+                <p class="skill-description">I make web user interfaces that are intuitive and responsive.</p>
+                <div class="pill-list">
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <p class="skill-description">I build secure back-end web applications using Node.js and Java.</p>
+                <div class="pill-list">
+                    <span class="skill-pill">Node.js</span>
+                    <span class="skill-pill">Java</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <p class="skill-description">I manage data using relational databases.</p>
+                <div class="pill-list">
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">MSSQL</span>
+                    <span class="skill-pill">PostgreSQL</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <p class="skill-description">I make Android apps using react-native and java</p>
+                <div class="pill-list">
+                    <span class="skill-pill">React-Native</span>
+                    <span class="skill-pill">Java</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="project-section">
+        <h4>Projects</h4>
+        <div class="project">
+            <div class="project-detail">
+                <p class="project-title">Snapsell</p> 
+                <p class="project-small">An ecommerce website that allows users to sell products and pre-loved items
+                    to potential buyers.
+                    <br><br>
+                    It allows a 2-way communication to buy and sell all at one place
+                    without having to pay for commission.</p>
+                <p class="project-description">
+                    <div class="pill-list">
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">jQuery</span>
+                    </div>
+                </p>
+            </div>
+            <img class="project-pic" src="./images/snapsell-landing.png" alt="Snapsell">
+        </div>
+        <div class="project reverse">
+            <div class="project-detail">
+                <p class="project-title">planetXpress</p> 
+                <p class="project-description">
+                    <p class="project-small">An ecommerce website that sells gadgets ranging from tablets to earphones.
+                        <br><br>
+                        It allows administrators to manage incoming orders as well as product stock.
+                        Administrators are also able to view product analytics.
+                    </p>
+                    <div class="pill-list">
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                    </div>
+                </p>
+            </div>
+            <img class="project-pic" src="./images/planetXpress-landing.png" alt="planetXpress">
+        </div>
+    </section>
+
+    <!-- <div class="footer-bg"></div> -->
+    <section class="contact-section" id="contact">
+        <div class="wrapper">
+            <form action="mailto:jingyi0939@gmail.com" method="post">
+                <fieldset class="contact-form">
+                    <legend><h4>Hire Me!</h4></legend>
+                    <div class="input-group">
+                        <label class="input-label" for="subject">Name:</label>
+                        <input class="input" name="name" type="text" placeholder="Full Name/Organisation">
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label" for="subject">Subject:</label>
+                        <input class="input" name="subject" type="text" placeholder="Title">
+                    </div>
+                    <div class="input-group">
+                        <label class="input-label" for="message">Body:</label>
+                        <textarea class="input" name="message" rows="10" placeholder="Enter message here"></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="Submit" class="submit-btn" id="submit-btn">
+                </fieldset>
+            </form>
+
+            <div class="thanks" id="thanks">
+                Thank you for dropping a message!
+            </div>
+            <div class="handles">
+                <a href="https://github.com/JinxYi"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="./js/vanilla-tilt.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
