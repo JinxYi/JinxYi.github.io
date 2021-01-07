@@ -1,0 +1,120 @@
+<!--
+    Home page
+    index.html
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Keywords for search engine-->
+    <meta name="keywords" content="Paper">
+    <!--Description of web page-->
+    <meta name="description" content="Fill in when you actually have a goal">
+    <!--Author-->
+    <meta name="author" content="TJY">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper</title>
+
+    <!-- Font Awescome -->
+    <script src="https://kit.fontawesome.com/cd0a21c0e2.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!--Import stylesheets-->
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="top-nav">
+            <li class="hide-bar logo">Paper</li>
+            <li id="bar"><a href="#"><i class="fas fa-bars"></i></a></li>
+            
+            <li id="search-bar">
+                <div>                    
+                    <form action="#" method="POST">
+                        <select id="category" name="category">
+                            <option value="all">All</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <input type="text" name="searchProduct" id="searchProduct" placeholder="Search for products">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </li>
+            <li class="hide-bar left"><a href="#"><i class="far fa-heart"></i></a></li>
+            <li class="hide-bar left"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <!--change this to dynamic-->
+            <li class="hide-bar left"><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            <!--consider language options when deploying (google, aws translate etc)-->
+        </ul>
+    </nav>
+    <section class="body-container">
+        <!-- Side bar container filters and categories -->
+        <aside class="aside">
+            <ul>
+                <li><a href="#">Bedding</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Office Supplies</a></li>
+                <li><a href="#">School Supplies</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <!-- Category name -->
+            <h2 class="title">Title</h2>
+
+            <!-- Listings -->
+            <section class="card-grid-container">
+                <div class="card">
+                    <a class="product-link" href="productDetails.html">
+                        <figure>
+                            <img class="product-img" src="../images/note10.jpg" alt="item">
+                            <figcaption class="product-name">INWPLLR Pink Tops Summer Women Tshirt Fashion Tee Shirt O-neck Cotton T-shirts Korea Short-sleeved T-shirt For Women (On Sale)</figcaption>
+                        </figure>
+                        <span class="prices">
+                            <span class="retail-price">$300</span>
+                            <span class="cost-price">$250</span>
+                        </span>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="card">
+                    <a class="product-link" href="productDetails.html">
+                        <figure>
+                            <img class="product-img" src="../images/galaxybuds.jpg" alt="item">
+                            <figcaption class="product-name">Sunt repellendus labore repudiandae repellat omnis nesciunt eligendi voluptate o</figcaption>
+                        </figure>
+                        <span class="prices">
+                            <span class="retail-price">$300</span>
+                            <span class="cost-price">$250</span>
+                        </span>
+                        <span class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </a>
+                </div>
+                
+            </section>
+        </main>
+    </section>
+    
+</body>
+
+</html>
