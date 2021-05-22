@@ -102,8 +102,8 @@ html {
 
 :root {
     --black: rgba(3, 1, 4);
-    --maincolor: rgb(2, 221, 115);
-    --mainshadow: rgba(2, 221, 115, 0.3);
+    --maincolor: rgb(0, 220, 113);
+    --mainshadow: rgba(24, 216, 123, 0.3);
 }
 
 

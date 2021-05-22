@@ -21,16 +21,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-
     <!--Import stylesheets-->
     <link rel="stylesheet" href="./styles/theme.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
+    <canvas id="3d-object"></canvas>
     <section class="above-the-fold">
         <div class="wrapper">
             <header>
+                
                 <a class="hide-bar logo" href="#">TanJingYi</a>
 
                 <nav>
@@ -49,7 +50,7 @@
                         Hi, I am Jing Yi.
                     </p>
                     <p class="hero-small">
-                        I am currently a Year 2 student studying Software Development at Singapore Polytechnic.
+                        I am a software developer in training based in Singapore.
                         
                     </p>
                     <a href="#project"><button class="cta">My Projects</button></a>
@@ -63,72 +64,6 @@
                     <small>See More</small>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="skill-section">
-        <h4>Skills</h4>
-        <section class="skills-list">
-            <div class="skill" data-tilt data-tilt-reverse="true">
-                <div class="skill-icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <!-- <p class="skill-description">I use HTML, CSS, javascript and its frameworks including jQuery and Ajax to make beautiful web user interfaces.</p> -->
-                <p class="skill-description">I make web user interfaces that are intuitive and responsive.</p>
-                <div class="pill-list">
-                    <span class="skill-pill">HTML</span>
-                    <span class="skill-pill">CSS</span>
-                    <span class="skill-pill">JavaScript</span>
-                    <span class="skill-pill">Bootstrap</span>
-                </div>
-            </div>
-
-            <div class="skill" data-tilt data-tilt-reverse="true">
-                <div class="skill-icon"><i class="fas fa-server"></i></div>
-                <p class="skill-description">I build secure back-end web applications using Node.js and Java.</p>
-                <div class="pill-list">
-                    <span class="skill-pill">Node.js</span>
-                    <span class="skill-pill">Java</span>
-                </div>
-            </div>
-
-            <div class="skill" data-tilt data-tilt-reverse="true">
-                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                <p class="skill-description">I manage data using relational databases.</p>
-                <div class="pill-list">
-                    <span class="skill-pill">MySQL</span>
-                    <span class="skill-pill">MSSQL</span>
-                    <span class="skill-pill">PostgreSQL</span>
-                </div>
-            </div>
-
-            <div class="skill" data-tilt data-tilt-reverse="true">
-                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-                <p class="skill-description">I make Android apps using react-native and java</p>
-                <div class="pill-list">
-                    <span class="skill-pill">React-Native</span>
-                    <span class="skill-pill">Java</span>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="about-section" id="about">
-        <div class="about-wrapper">
-            <div class="about-title">
-                About Me
-            </div>
-            <div class="about">
-                Hi, I am Jing Yi. I am passionate about coding and design. During my free time, I like to binge Netflix and play music. 
-                <br><br>
-                I have been learning software development for about 2 years now.
-                While I lack the experience in the industry, I make up for it by being a keen learner 
-                who can adapt well to changes. I primarily use java and javascript, and I am exploring other programming languages. 
-                <br><br>
-                I am currently looking for internship and job oppurtunities to learn the best industry practices.
-                Hit me up for an interview, teach me the industry standards, and I promise it will be worth while.
-            </div>
-            <a href="#contact" id="cta2"><button class="cta2">Contact Me</button></a>
         </div>
     </section>
 
@@ -149,6 +84,7 @@
                         <span class="skill-pill">CSS</span>
                         <span class="skill-pill">JavaScript</span>
                         <span class="skill-pill">jQuery</span>
+                        <span class="skill-pill">PostgreSQL</span>
                     </div>
                 </p>
             </div>
@@ -164,9 +100,10 @@
                         Administrators are also able to view product analytics.
                     </p>
                     <div class="pill-list">
-                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">Spring Boot</span>
                         <span class="skill-pill">HTML</span>
                         <span class="skill-pill">CSS</span>
+                        <span class="skill-pill">MySQL</span>
                     </div>
                 </p>
             </div>
@@ -174,10 +111,77 @@
         </div>
     </section>
 
+    <section class="skill-section">
+        <h4>Skills</h4>
+        <section class="skills-list">
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <!-- <p class="skill-description">I use HTML, CSS, javascript and its frameworks including jQuery and Ajax to make beautiful web user interfaces.</p> -->
+                <p class="skill-description">Programming Languages</p>
+                <div class="pill-list">
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Python</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <!-- <p class="skill-description">I use HTML, CSS, javascript and its frameworks including jQuery and Ajax to make beautiful web user interfaces.</p> -->
+                <p class="skill-description">Frontend Development</p>
+                <div class="pill-list">
+                    <span class="skill-pill">HTML</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">Bootstrap</span>
+                    <span class="skill-pill">jQuery</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <p class="skill-description">Backend Development</p>
+                <div class="pill-list">
+                    <span class="skill-pill">Node.js</span>
+                    <span class="skill-pill">Express.js</span>
+                    <span class="skill-pill">Spring Boot</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <p class="skill-description">Database</p>
+                <div class="pill-list">
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">MSSQL</span>
+                    <span class="skill-pill">PostgreSQL</span>
+                    <span class="skill-pill">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="skill" data-tilt data-tilt-reverse="true">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <p class="skill-description">Android App Development</p>
+                <div class="pill-list">
+                    <span class="skill-pill">React-Native</span>
+                    <span class="skill-pill">Android SDK</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    
+
+    
+
     <!-- <div class="footer-bg"></div> -->
     <section class="contact-section" id="contact">
         <div class="wrapper">
-            <form action="#" method="post">
+            <!-- <form action="#" method="post">
                 <fieldset class="contact-form">
                     <legend><h4>Hire Me!</h4></legend>
                     <div class="input-group">
@@ -198,7 +202,27 @@
 
             <div class="thanks" id="thanks">
                 Thank you for dropping a message!
-            </div>
+            </div> -->
+
+            <section class="about-section" id="about">
+                <div class="about-wrapper">
+                    <div class="about-title">
+                        About Me
+                    </div>
+                    <div class="about">
+                        Hi, I am Jing Yi. I am passionate about coding and design. During my free time, I like to binge Netflix and play music. 
+                        <br><br>
+                        I have been learning software development for about 2+ years now.
+                        While I lack the experience in the industry, I make up for it by being a keen learner 
+                        who can adapt well to changes. I primarily use java and javascript, and I am exploring other programming languages. 
+                        <br><br>
+                        I am currently looking for internship and job oppurtunities to learn the best industry practices.
+                        Hit me up for an interview, teach me the industry standards, and I promise it will be worth while.
+                    </div>
+                    
+                </div>
+            </section>
+            <h4>Contact Me At:</h4>
             <div class="handles">
                 <a href="https://github.com/JinxYi"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i class="fab fa-linkedin"></i></a>
@@ -210,6 +234,94 @@
     <!-- js -->
     <script src="./js/vanilla-tilt.js"></script>
     <script src="./js/index.js"></script>
+    <script type="module">
+        import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+        // import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
+
+        // scene
+        const scene = new THREE.Scene();
+
+        // light
+        const light = new THREE.AmbientLight( 0x40ff40, ); // soft white light
+        scene.add( light );
+        // canvas
+        const canvas = document.getElementById("3d-object");
+
+        // objects
+        const geometry = new THREE.SphereBufferGeometry(1.2, 16, 16);
+
+        // materials
+        const material = new THREE.MeshStandardMaterial( { color: 0x10c138 } );
+        material.roughness = 0.2;
+        material.wireframe = true;
+
+        
+
+        // mesh
+        const object = new THREE.Mesh( geometry, material );
+        scene.add( object );
+
+        
+        let sizes = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        }
+
+        // responsive
+        window.addEventListener('resize', () => {
+            // update window size
+            sizes.width = window.innerWidth;
+            sizes.height = window.innerHeight;
+
+            // update camera
+            // if(sizes.width<768) {
+            //     camera.position.x = 0;
+            // }
+            // else {
+            //     camera.position.x = -3;
+            // }
+            camera.aspect = sizes.width / sizes.height;
+            camera.updateProjectionMatrix();
+
+            //update renderer
+            renderer.setSize( sizes.width, sizes.height );
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        });
+
+        // camera
+        const camera = new THREE.PerspectiveCamera( 75, sizes.width / sizes.height, 0.1, 1000 );
+        camera.position.x = -2;
+        camera.position.z = 5;
+
+        // render settings
+        const renderer = new THREE.WebGLRenderer({
+            canvas: canvas,
+            alpha: true
+        });
+        renderer.setSize( sizes.width, sizes.height );
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        
+
+        // const controls = new OrbitControls( camera, renderer.domElement );
+
+        
+        const clock = new THREE.Clock();
+        // animation
+        const animate = () => {
+            const elapsedTime = clock.getElapsedTime();
+
+            object.rotation.x += 0.001;
+            object.rotation.y += 0.001;
+
+            // render
+            renderer.render( scene, camera );
+
+            // call animate() in next frame
+            window.requestAnimationFrame( animate );
+        };
+        animate();
+        
+    </script>
 </body>
 
 </html>
