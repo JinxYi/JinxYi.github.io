@@ -25,7 +25,7 @@ body {
 /* three.js */
 canvas {
     position: absolute;
-    top: 0;
+    top: 40px;
 }
 
 /* Above the fold */
