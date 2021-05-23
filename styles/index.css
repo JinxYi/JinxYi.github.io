@@ -388,6 +388,21 @@ section h4 {
     transition: 0.4s ease-in-out;
     box-shadow: 18px 18px 30px #d1d9e6;
 }
+
+.linked-image {
+    width: 60%;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.linked-image .project-pic{
+    width: 100%;
+}
+
+.reverse .linked-image {
+    width: 60%;
+}
+
 .reverse {
     flex-direction: row-reverse;
 }
@@ -543,7 +558,16 @@ section h4 {
     .project-pic {
         width: 100%;
     }
+    .linked-image {
+        width: 100%;
+    }
+    .reverse .linked-image {
+        width: 100%;
+    }
     .project-pic:hover {
+        transform: none;
+    }
+    .reverse .project-pic:hover {
         transform: none;
     }
     .project-detail {
