@@ -4,33 +4,44 @@
  */
 
 /*  Media Queries   */
+
 /* Extra small devices (portrait phones, less than 576px) */
+
 /* @media (max-width: 575.98px) {  } */
 
 /* Small devices (landscape phones, less than 768px) */
+
 /* @media (max-width: 767.98px) {  } */
 
 /* Medium devices (tablets, less than 992px) */
+
 /* @media (max-width: 991.98px) {  } */
 
 /* Large devices (desktops, less than 1200px) */
+
 /* @media (max-width: 1199.98px) {  } */
+
 html {
     overflow-x: hidden;
 }
+
 body {
     background: #f4f7fa;
 }
 
 /* three.js */
+
 canvas {
     position: absolute;
     top: 40px;
 }
 
 /* Above the fold */
+
 /*  Nav styles  */
+
 /* nav bar */
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -46,8 +57,8 @@ header {
     z-index: 100;
 }
 
-
 /* logo styles */
+
 .logo {
     font-size: 1.2rem;
     font-weight: bold;
@@ -55,15 +66,14 @@ header {
     color: #000;
 }
 
-
-
 /* nav link */
+
 .nav-list {
     display: flex;
     font-size: 15px;
 }
 
-.nav-item, .bar{
+.nav-item, .bar {
     padding: 0 0.7em;
 }
 
@@ -83,10 +93,10 @@ header {
     display: none;
 }
 
-
-
 /*  Responsive nav  */
+
 /* for medium devices and smaller */
+
 @media screen and (max-width: 767.98px) {
     /* nav ul {
         flex-direction: column;
@@ -111,20 +121,20 @@ header {
     }
 }
 
-
 /* Hero Content */
+
 .hero-wrapper {
     height: 75vh;
     position: relative;
     width: 80%;
     margin: 0 auto;
 }
+
 .hero {
     /* margin: 10% auto; */
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-
+    top: 30%;
+    transform: translate(0, -30%);
 }
 
 .hero-top {
@@ -155,19 +165,20 @@ header {
 .cta:hover {
     border-color: #ecf0f3;
     background: #ecf0f3;
-    box-shadow: 18px 18px 30px #d1d9e6,
-                -18px -18px 30px #ffffff;
+    box-shadow: 18px 18px 30px #d1d9e6, -18px -18px 30px #ffffff;
     /* box-shadow: 2px 2px 8px var(--mainshadow); */
 }
 
 /* Scroll button */
+
 .animate {
     display: block;
     height: 70px;
 }
+
 .scroll {
     position: absolute;
-    left: 50%;
+    left: 30%;
     margin-left: -20px;
     display: flex;
     flex-direction: column;
@@ -189,7 +200,6 @@ header {
 .scroll-circle {
     background: var(--maincolor);
     box-shadow: 2px 2px 10px var(--mainshadow);
-
     border-radius: 25px;
     position: relative;
     width: 12px;
@@ -221,12 +231,15 @@ header {
 }
 
 /* Responsive hero */
+
 @media (max-width: 991.98px) {
     /* .hero-wrapper {
         height: 80vh;
     } */
 }
+
 /* Small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     .hero-top {
         font-size: 1.9em;
@@ -236,8 +249,8 @@ header {
     }
 }
 
-
 /* Skills Section */
+
 section h4 {
     text-align: center;
 }
@@ -271,15 +284,13 @@ section h4 {
     max-width: 480px;
 }
 
-
 .skill-icon {
     font-size: 40px;
     text-align: center;
     padding-bottom: 18px;
     color: var(--black);
     /* text-shadow: 2px 2px 10px var(--mainshadow); */
-} 
-
+}
 
 .skill-description {
     font-size: 0.9em;
@@ -321,7 +332,9 @@ section h4 {
 }
 
 /* Responsive skills grid */
+
 /* Medium devices (tablets, less than 992px) */
+
 @media (max-width: 991.98px) {
     /* make card into 2 columns */
     .skill {
@@ -331,6 +344,7 @@ section h4 {
 }
 
 /* Small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     .skill {
         width: 100%;
@@ -348,9 +362,8 @@ section h4 {
     }
 }
 
-
-
 /* Projects Section */
+
 .project-section {
     margin: 50px auto;
     max-width: 1200px;
@@ -363,8 +376,6 @@ section h4 {
     margin: 3em 0 6em;
 }
 
-
-
 .project-small {
     line-height: 1.4em;
     margin: 30px 40px;
@@ -373,8 +384,8 @@ section h4 {
 .project-detail {
     width: 40%;
     text-align: center;
-    
 }
+
 .project-title {
     font-weight: 800;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -396,7 +407,7 @@ section h4 {
     transition: 0.4s ease-in-out;
 }
 
-.linked-image .project-pic{
+.linked-image .project-pic {
     width: 100%;
 }
 
@@ -407,21 +418,21 @@ section h4 {
 .reverse {
     flex-direction: row-reverse;
 }
+
 .reverse .project-pic {
     box-shadow: -18px -18px 30px #d1d9e6;
 }
 
 .project-pic:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(-10deg) scale3d(1, 1, 1);
+    /* transform: perspective(1000px) rotateX(0deg) rotateY(-10deg) scale3d(1, 1, 1); */
 }
 
 .reverse .project-pic:hover {
-    transform: perspective(1000px) rotateX(0deg) rotateY(10deg) scale3d(1, 1, 1);
+    /* transform: perspective(1000px) rotateX(0deg) rotateY(10deg) scale3d(1, 1, 1); */
 }
 
-
-
 /* About Me Section */
+
 /* .about-section {
     background: var(--black);
     color: #fff;
@@ -455,8 +466,7 @@ section h4 {
     border-radius: 100px;
 }
 
-
-.about-selfie p{
+.about-selfie p {
     margin-top: 10px;
     font-size: 12px;
 }
@@ -495,8 +505,8 @@ section h4 {
     margin: 10px;
 }
 
-
 /* Contact Me Section */
+
 .contact-section {
     background: linear-gradient(9deg, var(--black) 85%, transparent 85%);
     color: #fff;
@@ -556,18 +566,66 @@ section h4 {
     color: #fff;
 }
 
-/* Responsive form inputs */
 /* Medium devices (tablets, less than 992px) */
 
-
-
-
-
-.thanks {
-    display: none;
-    text-align: center;
-    transition: 0.5s ease-in;
+.js-scroll {
+    /* opacity: 1; */
+    transition: opacity 500ms;
 }
+
+.js-scroll.scrolled {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+/* animation */
+
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 @media (max-width: 991.98px) {
     /* make card into 2 columns */
@@ -602,8 +660,8 @@ section h4 {
     }
 }
 
-
 /* Small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767.98px) {
     .hero-small {
         font-size: 14px;
@@ -612,7 +670,7 @@ section h4 {
         margin: 2em 0 4em;
     }
     .about-title {
-        margin-top: 40px;
+        margin-top: 100px;
     }
     .about {
         display: flex;
