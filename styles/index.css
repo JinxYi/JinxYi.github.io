@@ -423,14 +423,6 @@ section h4 {
     box-shadow: -18px -18px 30px #d1d9e6;
 }
 
-.project-pic:hover {
-    /* transform: perspective(1000px) rotateX(0deg) rotateY(-10deg) scale3d(1, 1, 1); */
-}
-
-.reverse .project-pic:hover {
-    /* transform: perspective(1000px) rotateX(0deg) rotateY(10deg) scale3d(1, 1, 1); */
-}
-
 /* About Me Section */
 
 /* .about-section {
@@ -691,5 +683,8 @@ section h4 {
     .about-content {
         width: 100%;
         padding: 0;
+    }
+    .wrapper {
+        padding: 10px;
     }
 }
