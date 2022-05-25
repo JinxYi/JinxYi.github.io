@@ -36,7 +36,7 @@ const elementInView = (el, scrollOffset = 0) => {
     // detect when the element has scrolled x pixels into the page, 
     // or when a percentage of the page has been scrolled
     return (
-        elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - scrollOffset)
+        elementTop <= ((window.innerHeight || document.documentElement.clientHeight) + scrollOffset)
     );
 };
 
