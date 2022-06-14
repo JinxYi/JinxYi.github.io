@@ -227,7 +227,7 @@ section h4 {
 .experience-section {
     margin: 50px auto;
     max-width: 762px;
-    padding: 1.5em 1.8em 0.4rem;
+    padding: 1.5em 1.8em;
     font-size: 0.95rem;
 }
 
@@ -235,10 +235,38 @@ section h4 {
     margin: 0 0 2.4rem 0;
 }
 
+.experience-section-wrapper {
+    display: flex;
+}
+
+.experience-timeline-line {
+    border-right: 0.2rem dotted #e2e5eb;
+    margin-right: 2rem;
+}
+
 .experience {
     display: flex;
     flex-direction: column;
-    margin: 1.6rem 0 0;
+    margin: 0 0 1.6rem;
+}
+
+.experience:last-of-type {
+    margin-bottom: 0;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: var(--maincolor);
+    margin-top: 0.3rem;
+    margin-left: calc(-2rem - 0.2rem - 0.3rem );
+    border: 0.2rem solid #f4f7fa;
 }
 
 .exp-title {
@@ -247,7 +275,7 @@ section h4 {
 }
 
 .exp-duration {
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 6px;
     color: var(--maincolor);
 }
@@ -383,7 +411,7 @@ section h4 {
 .project {
     display: flex;
     justify-content: space-between;
-    margin: 3em 0 6em;
+    margin: 4.5em 0 1em;
 }
 
 .project-small {
@@ -401,7 +429,7 @@ section h4 {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     display: block;
-    margin: 15% auto 7%;
+    margin: 10% auto 0;
 }
 
 .project-pic {
@@ -447,7 +475,7 @@ section h4 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
-    padding: 6em 50px 2em;
+    padding: 4em 50px 2em;
 }
 
 .about-title {
@@ -510,14 +538,22 @@ section h4 {
 /* Contact Me Section */
 
 .contact-section {
-    background: linear-gradient(9deg, var(--black) 85%, transparent 85%);
+    /* background: linear-gradient(9deg, var(--black) 85%, transparent 85%); */
+    background: var(--black);
     color: #fff;
-    padding: 1.5em 0;
+    padding: 0 0 1.5em;
 }
 
 /* .contact-section .wrapper {
     margin-top: 1.4em;
 } */
+
+.contact-wrapper-top {
+    padding: 5rem 0;
+    background-color: #f4f7fa;
+    border-bottom-left-radius: 70%;
+}
+
 
 .contact-form {
     width: 50%;
