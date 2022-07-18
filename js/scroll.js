@@ -1,10 +1,16 @@
-// get all elements to be animated
-const scrollElements = document.querySelectorAll(".js-scroll");
+
+const scrollElements = document.querySelectorAll(".js-scroll"); // display elements once in view
+const scrollWrapper = document.querySelectorAll(".js-scroll-wrapper"); // displays element once parent wrapper is in view
 // const scrollout = document.querySelectorAll(".scrolled");
 // change element to transparent
 scrollElements.forEach((el) => {
     el.style.opacity = 0
 });
+scrollWrapper.forEach(el => {
+    for (let i = 0; i < el.children.length; i++) {
+        el.children[i].style.opacity = 0;
+    }
+})
 
 /**
  * A throttler function reduces number of times a function is called
@@ -13,14 +19,14 @@ scrollElements.forEach((el) => {
  */
 //initialize throttleTimer as false
 let throttleTimer = false;
- 
+
 const throttle = (callback, time) => {
     //don't run the function while throttle timer is true
     if (throttleTimer) return;
-     
+
     //first set throttle timer to true so the function doesn't run
     throttleTimer = true;
-     
+
     setTimeout(() => {
         //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed 
         callback();
@@ -41,15 +47,37 @@ const elementInView = (el, scrollOffset = 0) => {
 };
 
 
-
 const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
         if (elementInView(el)) {
             displayScrollElement(el);
-        } else {
+        }
+        else {
             hideScrollElement(el);
         }
-    })
+    });
+
+    let timer = 0;
+    scrollWrapper.forEach((el) => {
+        if (elementInView(el) && el.dataset.scrollCascade === "true") {
+            for (let i = 0; i < el.children.length; i++) {
+                console.log(timer);
+                setTimeout(() => displayScrollElement(el.children[i]), timer);
+                timer += 100;
+            }
+            timer = 0;
+        }
+        else if (elementInView(el)) {
+            for (let i = 0; i < el.children.length; i++) {
+                displayScrollElement(el.children[i]);
+            }
+        }
+        else {
+            for (let i = 0; i < el.children.length; i++) {
+                hideScrollElement(el.children[i]);
+            }
+        }
+    });
 }
 
 // change element to be visible
@@ -61,11 +89,11 @@ const hideScrollElement = (element) => {
     element.classList.remove("scrolled");
 };
 
-window.onload = function() {
+window.onload = function () {
     handleScrollAnimation();
-  };
+};
 
 // on scroll, animate elements
 window.addEventListener('scroll', () => {
     throttle(handleScrollAnimation, 250);
-  });
+});

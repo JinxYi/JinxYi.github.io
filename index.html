@@ -16,12 +16,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <!-- Font Awescome -->
     <script src="https://kit.fontawesome.com/cd0a21c0e2.js" crossorigin="anonymous"></script>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="./js/index.js" defer></script>
 
     <!--Import stylesheets-->
     <link rel="stylesheet" href="./styles/theme.css">
@@ -42,6 +44,7 @@
                         <li class="nav-item"><a href="#skills">About Me</a></li>
                         <li class="nav-item"><a href="#project">Projects</a></li>
                         <li class="nav-item"><a href="#about">Contact Me</a></li>
+                        <li class="nav-item" id="menu-bar-icon"><a href="#"><i class="fa-solid fa-bars-staggered"></i></a></li>
                     </ul>
                 </nav>
             </header>
@@ -52,9 +55,10 @@
                         Hi, I am Jing Yi.
                     </p>
                     <p class="hero-small">
-                        I am a software developer in training based in Singapore with 3 years of coding experience.
-                        I like to think that I can make up for my lack of work experience by being a
-                        keen and resilient learner who constantly seeks self-improvement.
+                        I am a software developer based in Singapore with 3 years of coding experience.
+                        I primarily use JavaScript and Python for coding.
+                        <!-- I like to think that I can make up for my lack of work experience by being a
+                        keen and resilient learner who constantly seeks self-improvement. -->
                     </p>
                     <a href="#project"><button class="cta">My Projects</button></a>
                 </div>
@@ -72,8 +76,8 @@
 
     <section class="skill-section" id="skills">
         <h4>Skills</h4>
-        <section class="skills-list">
-            <div class="skill js-scroll fade-in-bottom gradual" data-tilt data-tilt-reverse="true">
+        <section class="skills-list js-scroll-wrapper" data-scroll-cascade="true">
+            <div class="skill fade-in-bottom gradual">
                 <div class="skill-icon">
                     <i class="fas fa-code"></i>
                 </div>
@@ -86,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="skill js-scroll fade-in-bottom gradual" data-tilt data-tilt-reverse="true">
+            <div class="skill fade-in-bottom gradual">
                 <div class="skill-icon">
                     <i class="fas fa-desktop"></i>
                 </div>
@@ -95,13 +99,13 @@
                 <div class="pill-list">
                     <span class="skill-pill">HTML</span>
                     <span class="skill-pill">CSS</span>
-                    <span class="skill-pill">JavaScript</span>
                     <span class="skill-pill">jQuery</span>
                     <span class="skill-pill">Bootstrap</span>
+                    <span class="skill-pill">React</span>
                 </div>
             </div>
 
-            <div class="skill js-scroll fade-in-bottom gradual" data-tilt data-tilt-reverse="true">
+            <div class="skill fade-in-bottom gradual">
                 <div class="skill-icon"><i class="fas fa-server"></i></div>
                 <p class="skill-description">Backend Development</p>
                 <div class="pill-list">
@@ -111,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="skill js-scroll fade-in-bottom gradual" data-tilt data-tilt-reverse="true">
+            <div class="skill fade-in-bottom gradual">
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
                 <p class="skill-description">Database</p>
                 <div class="pill-list">
@@ -122,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="skill js-scroll fade-in-bottom gradual" data-tilt data-tilt-reverse="true">
+            <div class="skill fade-in-bottom gradual">
                 <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
                 <p class="skill-description">Android App Development</p>
                 <div class="pill-list">
@@ -138,17 +142,27 @@
         <div class="experience-section-wrapper">
             <div class="experience-timeline-line"></div>
             <div class="experience-timeline-desc">
-                <div class="experience">
+                <div class="experience js-scroll fade-in-bottom">
+                    <span class="exp-duration">Aug 2022 - (Expected) July 2025</span>
+                    <span class="exp-title">Undergraduate Student • Nanyang Technological University</span>
+                    <ul class="exp-description-list">
+                        <li class="exp-description">Computer Science Degree</li>
+                    </ul>
+                </div>
+
+                <div class="experience js-scroll fade-in-bottom">
                     <span class="exp-duration">Sep 2021 - Feb 2022</span>
                     <span class="exp-title">IT Intern • Security and Risk Solutions PTE LTD</span>
                     <ul class="exp-description-list">
                         <li class="exp-description">Maintenance and Development of Security Management System</li>
-                        <li class="exp-description">Led an IoT Project to develop a Prototype Surveillance System to be integrated with the existing Management System</li>
-                        <li class="exp-description">Worked with security personnel to create communications system complying with security protocols</li>
+                        <li class="exp-description">Led an IoT Project to develop a Prototype Surveillance System to be
+                            integrated with the existing Management System</li>
+                        <li class="exp-description">Worked with security personnel to create communications system
+                            complying with security protocols</li>
                     </ul>
                 </div>
 
-                <div class="experience">
+                <div class="experience js-scroll fade-in-bottom">
                     <span class="exp-duration">Apr 2019 – May 2022</span>
                     <span class="exp-title">Student • Singapore Polytechnic</span>
                     <ul class="exp-description-list">
@@ -159,16 +173,7 @@
                     </ul>
                 </div>
 
-                <div class="experience">
-                    <span class="exp-duration">Nov 2018 - Dec 2018</span>
-                    <span class="exp-title">Part-time Cashier • POPULAR</span>
-                    <ul class="exp-description-list">
-                        <li class="exp-description">Worked with POS System for cashiering</li>
-                        <li class="exp-description">Assisted Customer Queries</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
+                <div class="experience js-scroll fade-in-bottom">
                     <span class="exp-duration">Jan 2015 – Dec 2018</span>
                     <span class="exp-title">Student • Chua Chu Kang Secondary School</span>
                     <ul class="exp-description-list">
@@ -180,49 +185,6 @@
         </div>
     </section>
 
-    <!-- <section class="experience-section">
-        <h4>Work experience</h4>
-        <div class="experience">
-            <span class="exp-duration">Sep 2021 - Feb 2022</span>
-            <span class="exp-title">IT Intern • Security and Risk Solutions PTE LTD</span>
-            <ul class="exp-description-list">
-                <li class="exp-description">Maintenance and Development of Security Management System</li>
-                <li class="exp-description">Led an IoT Project to develop a Prototype Surveillance System to be integrated with the existing Management System</li>
-                <li class="exp-description">Worked with security personnel to create communications system complying with security protocols</li>
-            </ul>
-        </div>
-        <div class="experience">
-            <span class="exp-duration">Nov 2018 - Dec 2018</span>
-            <span class="exp-title">Part-time Cashier • POPULAR</span>
-            <ul class="exp-description-list">
-                <li class="exp-description">Worked with POS System for cashiering</li>
-                <li class="exp-description">Assisted Customer Queries</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="experience-section">
-        <h4>Education</h4>
-        <div class="experience">
-            <span class="exp-duration">Apr 2019 – May 2022</span>
-            <span class="exp-title">Singapore Polytechnic</span>
-            <ul class="exp-description-list">
-                <li class="exp-description">Diploma in Information Technology</li>
-                <li class="exp-description">Specialise in Software Development</li>
-                <li class="exp-description">Certificate of Academic Achievement 2021</li>
-                <li class="exp-description">GPA 3.739</li>
-            </ul>
-        </div>
-        <div class="experience">
-            <span class="exp-duration">Jan 2015 – Dec 2018</span>
-            <span class="exp-title">Chua Chu Kang Secondary School</span>
-            <ul class="exp-description-list">
-                <li class="exp-description">GCE 'O' Levels – Net L1R4 of 13</li>
-                <li class="exp-description">Section leader - Chinese Orchestra CCA</li>
-            </ul>
-        </div>
-    </section> -->
-    
     <section class="project-section" id="project">
         <h4>Projects</h4>
         <div class="project">
@@ -282,7 +244,8 @@
                 </div>
                 </p>
             </div>
-            <a class="linked-image js-scroll slide-right" href="https://wagon.neocities.org/html/index.html" target="_blank">
+            <a class="linked-image js-scroll slide-right" href="https://wagon.neocities.org/html/index.html"
+                target="_blank">
                 <img class="project-pic" src="./images/wagon-landing.png" alt="Wagon">
             </a>
         </div>
@@ -294,17 +257,20 @@
                 <p class="project-small">A productivity app that has been gamified to
                     reward users with collectible characters when they complete their tasks.
 
-                    Together in a team of 3, we used Adobe XD to create the wireframes, and Android SDK to develop the app.
-                    To build a serverless app, we utilized Firebase Realtime Database to store the user tasks and collectibles.
+                    Together in a team of 3, we used Adobe XD to create the wireframes, and Android SDK to develop the
+                    app.
+                    To build a serverless app, we utilized Firebase Realtime Database to store the user data.
                 </p>
                 <div class="pill-list">
                     <span class="skill-pill">Android SDK</span>
+                    <span class="skill-pill">Java</span>
                     <span class="skill-pill">AdobeXD</span>
                     <span class="skill-pill">Firebase Realtime DB</span>
                 </div>
                 </p>
             </div>
-            <a class="linked-image js-scroll slide-left" href="https://xd.adobe.com/view/4d041b05-29d4-4b8d-98b0-ebdb711a6a01-1857/" target="_blank">
+            <a class="linked-image js-scroll slide-left"
+                href="https://xd.adobe.com/view/4d041b05-29d4-4b8d-98b0-ebdb711a6a01-1857/" target="_blank">
                 <img class="project-pic" src="./images/wheresthedark.png" alt="Where's the Dark?">
             </a>
         </div>
@@ -349,7 +315,7 @@
                         <div class="about-selfie">
                             <img src="./images/portfiolio-selfie.jpg" alt="Me">
                             <p><b>Contact Me:</b><br>
-                            jingyi.19@ichat.sp.edu.sg
+                                jingyi0939@gmail.com
                             </p>
                         </div>
                         <p class="about-content">
@@ -358,10 +324,12 @@
                             <br><br>
                             I have been learning software development for about 3 years now.
                             While I lack the experience in the industry, I make up for it by being a keen learner
-                            who can adapt well to changes. I primarily use Java, JavaScript and Python. I also have experience
+                            who can adapt well to changes. I primarily use Java, JavaScript and Python. I also have
+                            experience
                             in web development using Express.js and Django.
                             <br><br>
-                            I am currently looking for job opportunities to learn the industry practices and as well as new
+                            I am currently looking for job opportunities to learn the industry practices and as well as
+                            new
                             technologies,
                             at the same time reinforcing my existing skills. Hit me up for an interview, teach me the
                             industry standards, and I promise it will be worth while.
@@ -381,7 +349,6 @@
     </section>
 
     <!-- js -->
-    <script src="./js/vanilla-tilt.js"></script>
     <script src="./js/scroll.js"></script>
     <script type="module">
         import * as THREE from 'https://unpkg.com/three/build/three.module.js';
