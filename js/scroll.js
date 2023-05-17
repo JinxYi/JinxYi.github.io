@@ -61,7 +61,6 @@ const handleScrollAnimation = () => {
     scrollWrapper.forEach((el) => {
         if (elementInView(el) && el.dataset.scrollCascade === "true") {
             for (let i = 0; i < el.children.length; i++) {
-                console.log(timer);
                 setTimeout(() => displayScrollElement(el.children[i]), timer);
                 timer += 100;
             }

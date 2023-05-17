@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <canvas id="3d-object"></canvas>
+    <canvas id="object-3d"></canvas>
     <section class="above-the-fold">
         <div class="wrapper">
             <header>
@@ -40,12 +40,12 @@
 
                 <nav>
                     <ul class="nav-list">
-                        <!-- <li class="bar"><a href="#"><i class="fas fa-bars"></i></a></li> -->
                         <li class="nav-item"><a href="#skills">About Me</a></li>
                         <li class="nav-item"><a href="#project">Projects</a></li>
                         <li class="nav-item"><a href="#about">Contact Me</a></li>
-                        <li class="nav-item" id="menu-bar-icon"><a href="#"><i class="fa-solid fa-bars-staggered"></i></a></li>
                     </ul>
+                    <span class="nav-item" id="menu-bar-icon"><span><i
+                                class="fa-solid fa-bars-staggered"></i></span></span>
                 </nav>
             </header>
 
@@ -55,8 +55,8 @@
                         Hi, I am Jing Yi.
                     </p>
                     <p class="hero-small">
-                        I am a software developer based in Singapore with 3 years of coding experience.
-                        I primarily use JavaScript and Python for coding.
+                        A software developer based in Singapore with 3 years of coding experience.
+                        I primarily use JavaScript and Python for coding an I specialize in software development.
                         <!-- I like to think that I can make up for my lack of work experience by being a
                         keen and resilient learner who constantly seeks self-improvement. -->
                     </p>
@@ -84,6 +84,7 @@
                 <!-- <p class="skill-description">I use HTML, CSS, javascript and its frameworks including jQuery and Ajax to make beautiful web user interfaces.</p> -->
                 <p class="skill-description">Programming Languages</p>
                 <div class="pill-list">
+                    <span class="skill-pill">C</span>
                     <span class="skill-pill">JavaScript</span>
                     <span class="skill-pill">Java</span>
                     <span class="skill-pill">Python</span>
@@ -280,7 +281,15 @@
 
     <!-- <div class="footer-bg"></div> -->
     <section class="contact-section" id="contact">
-        <div class="contact-wrapper-top"></div>
+        <div class="custom-shape-divider-top-1684351445">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <!-- <div class="contact-wrapper-top"></div> -->
 
         <div class="wrapper">
             <!-- <form action="#" method="post">
@@ -307,45 +316,65 @@
             </div> -->
             <section class="about-section" id="about">
                 <div class="about-wrapper">
-                    <div class="about-title">
-                        Need to reach me?
-                    </div>
 
                     <div class="about">
                         <div class="about-selfie">
-                            <img src="./images/portfiolio-selfie.jpg" alt="Me">
+                            <img src="./images/portfolio_picture.jpg" alt="Me">
                             <p><b>Contact Me:</b><br>
                                 jingyi0939@gmail.com
                             </p>
                         </div>
-                        <p class="about-content">
-                            Hi, I am Jing Yi. I am passionate about coding and design. During my free time, I like to
-                            binge Netflix and play music.
-                            <br><br>
-                            I have been learning software development for about 3 years now.
-                            While I lack the experience in the industry, I make up for it by being a keen learner
-                            who can adapt well to changes. I primarily use Java, JavaScript and Python. I also have
-                            experience
-                            in web development using Express.js and Django.
-                            <br><br>
-                            I am currently looking for job opportunities to learn the industry practices and as well as
-                            new
-                            technologies,
-                            at the same time reinforcing my existing skills. Hit me up for an interview, teach me the
-                            industry standards, and I promise it will be worth while.
-                        </p>
+                        <div class="about-content">
+                            <div class="about-title">
+                                Need to reach me?
+                            </div>
+                            <p>
+                                Hello, I am Jing Yi, a highly motivated and passionate programmer with a strong focus on
+                                web
+                                development. With 3 years of experience in the field, I have honed my skills in creating
+                                engaging and user-friendly web applications.
+                                <br><br>
+                                I have always been fascinated by the limitless possibilities that programming offers.
+                                The moment I wrote my first web server program, I knew that I had found my calling.
+                                The ability to bring ideas to life through code and create meaningful digital
+                                experiences
+                                drives my continuous learning and experimentation.
+                                <br><br>
+                                In addition to my own projects, I have also dedicated time to teaching my friends how to
+                                build websites. Witnessing their growth and seeing them apply their newfound skills to
+                                their
+                                own projects and internships has been incredibly rewarding.
+                                <br><br>
+                                I am currently seeking job opportunities to further expand my knowledge of industry
+                                practices and explore new technologies. I am eager to learn from experienced
+                                professionals
+                                and refine my existing skills. If given the opportunity, I promise to bring dedication,
+                                enthusiasm, and a strong work ethic to the team.
+                                <br><br>
+                                If you are looking for a motivated programmer who is eager to learn, grow, and
+                                contribute to
+                                your organization, I would love to discuss potential opportunities with you. Let's have
+                                an
+                                interview, where I can learn about the industry standards and showcase my passion for
+                                web
+                                development.
+                            </p>
+                        </div>
                     </div>
                     <div class="handles">
                         <a href="https://github.com/JinxYi" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i class="fab fa-linkedin"></i></a>
                         <!-- <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i
                                 class="fab fa-linkedin"></i></a> -->
                     </div>
                 </div>
             </section>
 
-
         </div>
+        <span class="credits">
+            This website has been made using HTML, CSS and JavaScript together with Font Awesome, Three.js
+            and shapedivider.app
+        </span>
     </section>
 
     <!-- js -->
@@ -361,7 +390,7 @@
         const light = new THREE.AmbientLight(0x40ff40,); // soft white light
         scene.add(light);
         // canvas
-        const canvas = document.getElementById("3d-object");
+        const canvas = document.getElementById("object-3d");
 
         // objects
         const geometry = new THREE.SphereBufferGeometry(2, 16, 16);
