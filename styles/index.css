@@ -30,7 +30,7 @@ canvas {
 }
 
 header {
-    overflow: hidden;
+    /* overflow-x: hidden; */
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -55,6 +55,11 @@ header {
 .nav-list {
     display: flex;
     font-size: 15px;
+    z-index: 100;
+}
+
+.navbar {
+    position: relative;
 }
 
 #menu-bar-icon,
@@ -83,6 +88,7 @@ header {
     display: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 999;
 }
 
 #menu-bar-icon i {
@@ -226,14 +232,35 @@ section h4 {
 .experience-timeline-line {
     /* border-right: 0.2rem dotted #e2e5eb; */
     width: 2px;
-    background: -moz-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* FF3.6+ */
-    background: -webkit-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* Chrome,Safari4+ */
+    background: -moz-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%);
+    background: -webkit-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Chrome,Safari4+ */
     background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%);
-    background: -webkit-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* IE10+ */
-    background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); /* W3C */
+    background: -webkit-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* IE10+ */
+    background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* W3C */
     margin-right: 2rem;
+}
+
+@keyframes slide-down {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.scrolled.slide-down {
+    animation: slide-down 0.6s ease-in-out both;
+    opacity: 1 !important;
 }
 
 .experience {
@@ -435,6 +462,14 @@ section h4 {
 #contact {
     position: relative;
 }
+.contact-section *::selection {
+    background-color: #ecf0f3;
+    color: var(--black);
+}
+.contact-section *::moz-selection {
+    background-color: #ecf0f3;
+    color: var(--black);
+}
 .custom-shape-divider-top-1684351445 {
     position: absolute;
     top: 0;
@@ -545,12 +580,6 @@ section h4 {
 /* .contact-section .wrapper {
     margin-top: 1.4em;
 } */
-
-.contact-wrapper-top {
-    padding: 5rem 0;
-    background-color: #f4f7fa;
-    border-bottom-left-radius: 70%;
-}
 
 
 .contact-form {
@@ -783,7 +812,28 @@ section h4 {
         display: block;
     }
     .nav-list {
-        display: none;
+        /* display: none; */
+        opacity: 0;
+        border-radius: 12px;
+        background: #ffffff;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        margin-right: 5px;
+        text-align: right;
+        white-space: nowrap;
+        transition: opacity 0.2s;
+    }
+    .show {
+        opacity: 1;
+    }
+    .nav-list .nav-item:nth-child(1) {
+        padding-top: 8px;
+    }
+    .nav-list .nav-item {
+        padding: 0 5px 8px;
     }
 
     .nav {
