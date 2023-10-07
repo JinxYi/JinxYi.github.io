@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background: #f4f7fa;
+    background: var(--background);
 }
 
 /* three.js */
@@ -27,6 +27,21 @@ canvas {
     max-width: 1024px;
     margin: 0 auto;
     padding: 1.5em 2em;
+}
+
+.sticky {
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+    position: fixed;
+    width: 100%;
+    max-width: none;
+    z-index: 101;
+}
+
+.sticky-header {
+    background-color: rgba(244, 247, 250, 0.75);
+    box-shadow: 2px 2px 12px #dfe5ef7e;
+    transition: box-shadow, background-color 0.3s;
 }
 
 header {
@@ -830,10 +845,10 @@ section h4 {
         opacity: 1;
     }
     .nav-list .nav-item:nth-child(1) {
-        padding-top: 8px;
+        padding-top: 12px;
     }
     .nav-list .nav-item {
-        padding: 0 5px 8px;
+        padding: 0 15px 12px;
     }
 
     .nav {

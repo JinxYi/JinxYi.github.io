@@ -24,6 +24,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <script src="./js/index.js" defer></script>
+    <script src="./js/navigationBar.js" defer></script>
 
     <!--Import stylesheets-->
     <link rel="stylesheet" href="./styles/theme.css">
@@ -33,9 +34,8 @@
 <body>
     <canvas id="object-3d"></canvas>
     <section class="above-the-fold">
-        <div class="wrapper">
+        <div id="navbar-wrapper" class="wrapper sticky">
             <header>
-
                 <a class="hide-bar logo" href="#">TanJingYi</a>
 
                 <nav class="navbar">
@@ -43,12 +43,15 @@
                         <li class="nav-item"><a href="#skills">About Me</a></li>
                         <li class="nav-item"><a href="#project">Projects</a></li>
                         <li class="nav-item"><a href="#about">Contact Me</a></li>
-                        <li class="nav-item"><a href="cv.html">CV</a></li>
+                        <li class="nav-item"><a href="./pages/cv.html">CV</a></li>
                     </ul>
                     <span class="nav-item" id="menu-bar-icon"><span><i
                                 class="fa-solid fa-bars-staggered"></i></span></span>
                 </nav>
             </header>
+        </div>
+
+        <div class="wrapper">
 
             <div class="hero-wrapper">
                 <div class="hero js-scroll slide-left">
@@ -56,10 +59,8 @@
                         Hi, I am Jing Yi.
                     </p>
                     <p class="hero-small">
-                        A software developer based in Singapore with 3 years of coding experience.
-                        I primarily use JavaScript and Python for coding an I specialize in software development.
-                        <!-- I like to think that I can make up for my lack of work experience by being a
-                        keen and resilient learner who constantly seeks self-improvement. -->
+                        Passionate software developer dedicated to elevating user experiences and
+                        solving complex challenges.
                     </p>
                     <a href="#project"><button class="cta">My Projects</button></a>
                 </div>
@@ -330,7 +331,7 @@
                             <p>
                                 Hello, I am Jing Yi, a highly motivated and passionate programmer with a strong focus on
                                 web
-                                development. With 3 years of experience in the field, I have honed my skills in creating
+                                development. With almost 4 years of experience programming, I have honed my skills in creating
                                 engaging and user-friendly web applications.
                                 <br><br>
                                 I have always been fascinated by the limitless possibilities that programming offers.
@@ -367,8 +368,7 @@
 
         </div>
         <span class="credits">
-            This website has been made using HTML, CSS and JavaScript together with Font Awesome, Three.js
-            and shapedivider.app
+            This website has been made using HTML, CSS and JavaScript together with Font Awesome and Three.js.
         </span>
     </section>
 
@@ -388,15 +388,33 @@
         const canvas = document.getElementById("object-3d");
 
         // objects
-        const geometry = new THREE.SphereBufferGeometry(2, 16, 16);
+        // var geometry = new THREE.SphereBufferGeometry(2, 16, 16);
 
-        // materials
-        const material = new THREE.MeshStandardMaterial({ color: 0x10c138 });
-        material.roughness = 0.2;
-        material.wireframe = true;
+        // // materials
+        // const material = new THREE.MeshStandardMaterial({ color: 0x10c138 });
+        // material.roughness = 0.2;
+        // material.wireframe = true;
 
-        // mesh
-        const object = new THREE.Mesh(geometry, material);
+        // // mesh
+        // const object = new THREE.Mesh(geometry, material);
+        // scene.add(object);
+
+        // Define dodecahedron vertices
+        var geometry = new THREE.DodecahedronGeometry(3);
+
+        // Define different colors for each face
+        const colors = [
+        0xff5733, 0xc70039, 0xff8c00, 0xffd700, 0xff5733,
+        0xff5733, 0xc70039, 0xff8c00, 0xffd700, 0xff5733,
+        ];
+
+        // Create materials for each face
+        const materials = colors.map(color => new THREE.MeshBasicMaterial({ color }));
+
+        // Create a mesh with the geometry and materials
+        const object = new THREE.Mesh(geometry, materials);
+
+        // Add the mesh to the scene
         scene.add(object);
 
 
