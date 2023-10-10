@@ -94,5 +94,5 @@ window.onload = function () {
 
 // on scroll, animate elements
 window.addEventListener('scroll', () => {
-    throttle(handleScrollAnimation, 250);
+    throttle(handleScrollAnimation, 50);
 });
