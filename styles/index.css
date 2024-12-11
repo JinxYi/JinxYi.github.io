@@ -113,12 +113,28 @@ header {
 /* Hero Content */
 
 .hero-wrapper {
-    height: 80vh;
+    height: 84vh;
     position: relative;
     /* width: 80%; */
     margin: 0 auto;
 }
 
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.hero-handles a {
+    margin-right: 0.5em;
+    color: var(--black);
+    font-size: 1.5em;
+    transition: 0.2s ease-in;
+}
+
+.hero-handles a:hover {
+    color: var(--maincolor);
+}
 .hero {
     position: absolute;
     top: 30%;
@@ -259,6 +275,7 @@ section h4 {
     /* IE10+ */
     background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
     /* W3C */
+    background: #e2e5eb;
     margin-right: 2rem;
 }
 
@@ -320,8 +337,8 @@ section h4 {
 
 .exp-description {
     font-size: 0.95rem;
-    margin-bottom: 4px;
-    line-height: 1.1rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.2rem;
 }
 
 .skill-section {
@@ -635,14 +652,14 @@ section h4 {
     justify-content: center;
 }
 
-.handles i {
+.handles a {
     margin-right: 0.7em;
     color: var(--maincolor);
     font-size: 1.5em;
     transition: 0.2s ease-in;
 }
 
-.handles i:hover {
+.handles a:hover {
     color: #fff;
 }
 
