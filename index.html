@@ -29,6 +29,7 @@
     <!--Import stylesheets-->
     <link rel="stylesheet" href="./styles/theme.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/floating-text.css">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                         <li class="nav-item"><a href="#skills">Skills</a></li>
                         <li class="nav-item"><a href="#project">Projects</a></li>
                         <li class="nav-item"><a href="#about">Contact Me</a></li>
-                        <li class="nav-item"><a href="./pages/cv.html">CV</a></li>
+                        <li class="nav-item"><a target="_blank" href="./pages/cv.html">CV &nbsp; <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                     </ul>
                     <span class="nav-item" id="menu-bar-icon"><span><i
                                 class="fa-solid fa-bars-staggered"></i></span></span>
@@ -57,22 +58,20 @@
                 style="position: absolute;width: 42%;height: auto;right: 3%;top: 25%;">
             <div class="hero-wrapper">
                 <div class="hero js-scroll slide-left">
-                    <p class="hero-top">
+                    <p class="hero-top floating">
                         Hi, I am Jing Yi.
                     </p>
                     <p class="hero-small">
                         Computer Science Undergraduate and Software Engineer based in Singapore looking for
-                        <strong>summer internship (May to Aug 2025) and
+                        <strong>internship (Aug to Dec 2025) and
                             full-time opportunities Jan 2026 onward.</strong>
                     </p>
                     <div class="hero-bottom">
                         <a href="#project"><button class="cta">My Projects</button></a>
                         <div class="hero-handles">
                             <a href="https://github.com/JinxYi" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i
+                            <a href="https://www.linkedin.com/in/tan-jinx-yi/"><i
                                     class="fab fa-linkedin"></i></a>
-                            <!-- <a href="https://www.linkedin.com/in/tan-jing-yi-2ab7501bb/"><i
-                                class="fab fa-linkedin"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -214,7 +213,7 @@
                 <div class="pill-list">
                     <span class="skill-pill">ASP.NET Core</span>
                     <span class="skill-pill">Express.js</span>
-                    <span class="skill-pill">Django</span>
+                    <span class="skill-pill">Flask</span>
                 </div>
             </div>
 
@@ -274,7 +273,7 @@
                 </p>
             </div>
             <a class="linked-image js-scroll slide-right" href="https://aidmi.ai/" target="_blank">
-                <img class="project-pic js-scroll slide-right" src="./images/aidmi/aidmi-dashboard.png"
+                <img class="project-pic js-scroll slide-right" src="./images/aidmi/aidmi.png"
                     alt="AidMi Medical Dashboard" />
             </a>
         </div>
@@ -325,7 +324,7 @@
             </div>
             <img class="project-pic js-scroll slide-right" src="./images/snapsell-landing.png" alt="Snapsell">
         </div> -->
-        <div class="project">
+        <!-- <div class="project">
             <div class="project-detail js-scroll slide-left">
                 <p class="project-title">Wagon</p>
                 <p class="project-small">Wagon is a madeup vehicle rental company
@@ -344,7 +343,7 @@
                 target="_blank">
                 <img class="project-pic" src="./images/wagon-landing.png" alt="Wagon">
             </a>
-        </div>
+        </div> -->
     </section>
 
 
@@ -393,7 +392,7 @@
                             </p>
                         </div>
                         <div class="about-content">
-                            <div class="about-title">
+                            <div class="about-title floating">
                                 Need to reach me?
                             </div>
                             <p>
@@ -404,11 +403,7 @@
                                 I have always been fascinated by the limitless possibilities that programming offers.
                                 The ability to bring ideas to life through code and create meaningful digital
                                 experiences
-                                drive me to learn and experiment.
-                                <br><br>
-                                In addition to my own projects, I have also dedicated time to teaching my friends how to
-                                build websites. Witnessing their growth and seeing them apply their newfound skills to
-                                their own projects and internships has been incredibly rewarding.
+                                drives me to learn and experiment.
                                 <br><br>
                                 I am currently seeking job opportunities to further expand my knowledge of industry
                                 practices and explore new technologies. I am eager to learn from experienced
@@ -439,7 +434,7 @@
 
     <!-- js -->
     <script src="./js/scroll.js"></script>
-    <!-- <script type="module">
+    <script type="module">
         import * as THREE from 'https://unpkg.com/three/build/three.module.js';
         // import { OrbitControls } from 'https://unpkg.com/three/examples/jsm/controls/OrbitControls.js';
 
@@ -542,7 +537,7 @@
         };
         animate();
 
-    </script> -->
+    </script>
 </body>
 
 </html>
