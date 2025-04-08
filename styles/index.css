@@ -95,8 +95,8 @@ header {
 #menu-bar-icon:hover,
 .nav-item a:hover,
 .bar a:hover {
-    color: var(--maincolor);
-    text-shadow: 2px 2px 5px var(--mainshadow);
+    color: var(--primary);
+    text-shadow: 2px 2px 5px var(--primary-shadow);
 }
 
 #menu-bar-icon {
@@ -133,7 +133,7 @@ header {
 }
 
 .hero-handles a:hover {
-    color: var(--maincolor);
+    color: var(--primary);
 }
 .hero {
     position: absolute;
@@ -145,8 +145,8 @@ header {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 25px;
-    color: var(--maincolor);
-    text-shadow: 2px 2px 10px var(--mainshadow);
+    color: var(--primary);
+    text-shadow: 2px 2px 10px var(--primary-shadow);
 }
 
 .hero-small {
@@ -154,6 +154,7 @@ header {
     font-size: 16px;
     line-height: 1.6em;
     padding-right: 40%;
+    text-shadow: 2px 2px 10px var(--secondary-shadow);
 }
 
 .cta {
@@ -161,15 +162,15 @@ header {
     font-weight: 500;
     padding: 0.5em 1.5em;
     color: #000;
-    background: var(--maincolor);
-    border-color: var(--maincolor);
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 .cta:hover {
     border-color: #ecf0f3;
     background: #ecf0f3;
     box-shadow: 18px 18px 25px #d1d9e6, -18px -18px 25px #ffffff;
-    /* box-shadow: 2px 2px 8px var(--mainshadow); */
+    /* box-shadow: 2px 2px 8px var(--primary-shadow); */
 }
 
 /* Scroll button */
@@ -194,15 +195,15 @@ header {
 .scroll-icon {
     position: relative;
     margin: 0 auto 10px;
-    border: 3px solid var(--maincolor);
+    border: 3px solid var(--primary);
     border-radius: 25px;
     width: 25px;
     height: 35px;
 }
 
 .scroll-circle {
-    background: var(--maincolor);
-    box-shadow: 2px 2px 10px var(--mainshadow);
+    background: var(--primary);
+    box-shadow: 2px 2px 10px var(--primary-shadow);
     border-radius: 25px;
     position: absolute;
     width: 4px;
@@ -314,7 +315,7 @@ section h4 {
     -moz-border-radius: 2.5rem;
     -webkit-border-radius: 2.5rem;
     border-radius: 2.5rem;
-    background-color: var(--maincolor);
+    background-color: var(--primary);
     margin-top: 0.3rem;
     margin-left: calc(-2rem - 0.2rem - 0.3rem);
     border: 0.2rem solid #f4f7fa;
@@ -328,7 +329,7 @@ section h4 {
 .exp-duration {
     font-weight: 600;
     margin-bottom: 6px;
-    color: var(--maincolor);
+    color: var(--primary);
 }
 
 .exp-description-list {
@@ -373,9 +374,9 @@ section h4 {
 .skill-icon {
     font-size: 40px;
     text-align: center;
-    padding-bottom: 18px;
+    padding-bottom: 14px;
     color: var(--black);
-    /* text-shadow: 2px 2px 10px var(--mainshadow); */
+    /* text-shadow: 2px 2px 10px var(--primary-shadow); */
 }
 
 .skill-description {
@@ -402,21 +403,21 @@ section h4 {
     font-size: 13px;
     font-weight: 600;
     background: transparent;
-    color: var(--maincolor);
-    border: 1px solid var(--maincolor);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     margin: 0 5px;
     padding: 5px 10px;
     border-radius: 25px;
     margin: 6px 4px;
     transition: 0.2s ease-in;
     vertical-align: middle;
-    box-shadow: 1px 3px 3px var(--mainshadow);
+    box-shadow: 1px 3px 3px var(--primary-shadow);
     text-align: center;
 }
 
 .skill-pill:hover {
     cursor: default;
-    background: var(--maincolor);
+    background: var(--primary);
     color: #fff;
 }
 
@@ -537,8 +538,8 @@ section h4 {
     line-height: 2.5rem;
     font-size: 2.5em;
     font-weight: 600;
-    color: var(--maincolor);
-    text-shadow: 2px 2px 10px var(--maincolor);
+    color: var(--primary);
+    text-shadow: 2px 2px 10px var(--primary);
     margin: 15px 0 2.4rem;
 }
 
@@ -576,14 +577,14 @@ section h4 {
     padding: 10px 40px;
     margin: 0 auto;
     border: transparent;
-    background: var(--maincolor);
+    background: var(--primary);
     color: var(--black);
 }
 
 .cta2:hover {
     background: transparent;
-    color: var(--maincolor);
-    border-color: var(--maincolor);
+    color: var(--primary);
+    border-color: var(--primary);
 }
 
 #cta2 {
@@ -638,13 +639,13 @@ section h4 {
 
 .submit-btn {
     width: 100%;
-    border-color: var(--maincolor) !important;
-    background-color: var(--maincolor) !important;
+    border-color: var(--primary) !important;
+    background-color: var(--primary) !important;
 }
 
 .submit-btn:hover {
     width: 100%;
-    color: var(--maincolor) !important;
+    color: var(--primary) !important;
     background-color: transparent !important;
 }
 
@@ -656,7 +657,7 @@ section h4 {
 
 .handles a {
     margin-right: 0.7em;
-    color: var(--maincolor);
+    color: var(--primary);
     font-size: 1.5em;
     transition: 0.2s ease-in;
 }
@@ -846,15 +847,16 @@ section h4 {
         display: block;
     }
     .nav-list {
-        /* display: none; */
         opacity: 0;
+        padding: 0;
         border-radius: 12px;
-        background: #ffffff;
+        box-shadow: 0px 0px 20px 1px var(--secondary-shadow);
+        background: var(--background);
         flex-direction: column;
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 35px;
+        margin-top: 40px;
         margin-right: 5px;
         text-align: right;
         white-space: nowrap;

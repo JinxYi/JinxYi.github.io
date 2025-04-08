@@ -102,8 +102,11 @@ html {
 
 :root {
     --black: rgba(3, 1, 4);
-    --maincolor: rgb(0, 220, 113);
-    --mainshadow: rgba(24, 216, 123, 0.3);
+    --primary: rgb(0, 220, 113);
+    --primary-shadow: rgba(24, 216, 123, 0.3);
+    --secondary-shadow: rgba(3, 1, 4, 0.15);
+    --tertiary: rgb(224, 141, 172);
+    --tertiary-shadow: rgba(120, 128, 181, 0.3);
     --background: rgb(244, 247, 250);
     --theme-border-radius: 1.1em;
 }
@@ -151,7 +154,7 @@ input[type=month]:focus, input[type=email]:focus, input[type=number]:focus,
 input[type=time]:focus, input[type=url]:focus, input[type=tel]:focus, input[type=search]:focus,
 input[type=week]:focus, input[type=color]:focus,
 textarea:focus  {
-    box-shadow: 0px 0px 0px 3px var(--maincolor);
+    box-shadow: 0px 0px 0px 3px var(--primary);
 }
 
 input[type=color] {
@@ -182,7 +185,7 @@ select > option {
 }
 
 select:focus {
-    box-shadow: 0px 0px 0px 3px var(--maincolor);
+    box-shadow: 0px 0px 0px 3px var(--primary);
 }
 
 
@@ -206,7 +209,7 @@ button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=subm
 }
 
 button:focus, input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus {
-    box-shadow: 0px 0px 0px 3px var(--maincolor);
+    box-shadow: 0px 0px 0px 3px var(--primary);
     /* border-color: rgb(220, 176, 78); */
 }
 
