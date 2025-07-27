@@ -6,6 +6,7 @@ import { SkillsSection } from "./components/skills-section";
 import { ProjectsSection } from "./components/projects-section";
 import { AboutSection } from "./components/about-section";
 import { data } from "./data";
+import "./components/scroll.js";
 
 export const App = () => {
   return (

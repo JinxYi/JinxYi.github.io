@@ -116,60 +116,8 @@
     text-align: center;
 }
 
-/* Responsive design */
-@media (max-width: 991.98px) {
-    /* make card into 2 columns */
-    .project {
-        flex-direction: column;
-        margin: 2em 3em 4em 3em;
-    }
-
-    .linked-image {
-        width: 100%;
-    }
-
-    .reverse .linked-image {
-        width: 100%;
-    }
-
-    .project-pic {
-        width: 100%;
-    }
-
-    .project-pic:hover {
-        transform: none;
-    }
-
-    .reverse .project-pic:hover {
-        transform: none;
-    }
-
-    .project-detail {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .project-title {
-        margin: 2em;
-    }
-
-    .hero-wrapper {
-        width: 90%;
-    }
-
-    .skill-section {
-        padding: 10px;
-    }
-
-    /* make card into 2 columns */
-    .skill {
-        width: calc(90% / 2);
-        margin: calc(5% / 2);
-    }
-}
 
 /* Small devices (landscape phones, less than 768px) */
-
 @media (max-width: 767.98px) {
     .about-title {
         margin-top: 2.8rem;
@@ -180,7 +128,6 @@
         flex-direction: column-reverse;
         margin: 0;
     }
-
 
     .about-selfie {
         margin: 30px auto;

@@ -1,3 +1,5 @@
+import { PillList } from "../pill";
+
 export interface ProjectInterface {
   title: string;
   description: string;
@@ -21,14 +23,7 @@ export const Project = ({ data, reverse }: ProjectProps) => {
         <p class="project-title">{data.title}</p>
         <p class="project-small">{data.description}</p>
         <p class="project-description">
-          <div class="pill-list">
-            {
-                data.stack.map((skill) => (
-                    <span class="skill-pill">{skill}</span>
-                    )
-                )
-            }
-          </div>
+          <PillList items={data.stack}/>
         </p>
       </div>
       <a

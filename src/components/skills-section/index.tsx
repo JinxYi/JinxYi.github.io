@@ -1,3 +1,4 @@
+import { PillList } from "../pill";
 import "./index.css";
 
 interface SkillsSectionProps {
@@ -21,13 +22,7 @@ export const SkillsSection = ({ skills }: SkillsSectionProps) => {
               {item.icon ? item.icon : <i class="fas fa-cog"></i>}
             </div>
             <p class="skill-description">{item.description}</p>
-            <div class="pill-list">
-              {item.items.map((skill, skillIndex) => (
-                <span class="skill-pill" key={`${skill}-${skillIndex}`}>
-                  {skill}
-                </span>
-              ))}
-            </div>
+            <PillList items={item.items} />
           </div>
         ))}
       </section>
