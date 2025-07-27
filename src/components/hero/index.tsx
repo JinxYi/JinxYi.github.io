@@ -1,12 +1,14 @@
 import "./index.css";
 import "./floating-text.css";
+import { Handles, type HandleInterface } from "../handle";
 
 export interface HeroProps {
   title?: string;
   tagline?: string;
+  handles?: HandleInterface[];
 }
 
-export const Hero = ({title, tagline}: HeroProps) => {
+export const Hero = ({title, tagline, handles}: HeroProps) => {
   return (
     <>
         <section class="above-the-fold">
@@ -26,14 +28,15 @@ export const Hero = ({title, tagline}: HeroProps) => {
                 <a href="#project">
                   <button class="cta">My Projects</button>
                 </a>
-                <div class="hero-handles">
+                <Handles handles={handles ?? []} />
+                {/* <div class="hero-handles">
                   <a href="https://github.com/JinxYi" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                   <a href="https://www.linkedin.com/in/tan-jinx-yi/">
                     <i class="fab fa-linkedin"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -1,0 +1,22 @@
+.handles {
+    margin: 3.3em 0 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.handles a {
+    margin-right: 0.7em;
+    color: var(--primary);
+    font-size: 1.5em;
+    transition: 0.2s ease-in;
+}
+
+.handles a:hover {
+    color: #fff;
+}
+
+@media (max-width: 767.98px) {
+    .handles {
+        margin-top: 1.4rem;
+    }
+}

@@ -13,7 +13,7 @@
     gap: 1.3rem;
 }
 
-.hero-handles a {
+/* .hero-handles a {
     margin-right: 0.5em;
     color: var(--black);
     font-size: 1.5em;
@@ -22,7 +22,7 @@
 
 .hero-handles a:hover {
     color: var(--primary);
-}
+} */
 .hero {
     position: absolute;
     top: 30%;
