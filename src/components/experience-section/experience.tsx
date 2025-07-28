@@ -1,3 +1,5 @@
+import { useScrollTrigger } from "../animation";
+
 export interface ExperienceInterface {
   duration: string;
   title: string;
@@ -9,8 +11,9 @@ interface ExperienceProps {
 }
 
 export const Experience = ({ data }: ExperienceProps) => {
+  const scrollRef = useScrollTrigger("fade-in-bottom");
   return (
-    <div class="experience js-scroll fade-in-bottom">
+    <div ref={scrollRef} class="experience">
       <span class="exp-duration">{data.duration}</span>
       <span class="exp-title">{data.title}</span>
       <ul class="exp-description-list">

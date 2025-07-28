@@ -1,6 +1,7 @@
 import "./index.css";
 import "./floating-text.css";
 import { Handles, type HandleInterface } from "../handle";
+import { useScrollTrigger } from "../animation";
 
 export interface HeroProps {
   title?: string;
@@ -9,6 +10,7 @@ export interface HeroProps {
 }
 
 export const Hero = ({title, tagline, handles}: HeroProps) => {
+  const scrollRef = useScrollTrigger("fade-in-left");
   return (
     <>
         <section class="above-the-fold">
@@ -19,7 +21,7 @@ export const Hero = ({title, tagline, handles}: HeroProps) => {
             style="position: absolute;width: 42%;height: auto;right: 3%;top: 25%;"
           />
           <div class="hero-wrapper">
-            <div class="hero js-scroll slide-left">
+            <div ref={scrollRef} class="hero">
               <p class="hero-top floating">{title}</p>
               <p class="hero-small">
                 {tagline}

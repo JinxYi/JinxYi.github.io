@@ -1,3 +1,4 @@
+import { useScrollTrigger } from "../animation";
 import { Experience, type ExperienceInterface } from "./experience";
 import "./index.css";
 
@@ -10,9 +11,10 @@ export const ExperienceSection = ({
   title,
   experiences,
 }: ExperienceSectionProps) => {
+  const scrollRef = useScrollTrigger("fade-in-bottom");
   return (
-    <section class="experience-section" id="experience">
-      <h4 class="fade-in-bottom gradual js-scroll">{title}</h4>
+    <section ref={scrollRef} class="experience-section" id="experience">
+      <h4>{title}</h4>
       <div class="experience-section-wrapper">
         <div class="experience-timeline-line"></div>
         <div class="experience-timeline-desc">

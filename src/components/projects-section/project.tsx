@@ -1,3 +1,4 @@
+import { useScrollTrigger } from "../animation";
 import { PillList } from "../pill";
 
 export interface ProjectInterface {
@@ -17,26 +18,32 @@ interface ProjectProps {
 }
 
 export const Project = ({ data, reverse }: ProjectProps) => {
+  const detailsScrollRef = useScrollTrigger(reverse ? "fade-in-right" : "fade-in-left");
+  const thumbnailScrollRef = useScrollTrigger(reverse ? "fade-in-left" : "fade-in-right");
   return (
     <div class={"project" + (reverse ? " reverse" : "")}>
-      <div class={"project-detail js-scroll" + (reverse ? " slide-right" : " slide-left")}>
-        <p class="project-title">{data.title}</p>
-        <p class="project-small">{data.description}</p>
-        <p class="project-description">
-          <PillList items={data.stack}/>
-        </p>
-      </div>
-      <a
-        class={"linked-image js-scroll" + (reverse ? " slide-left" : " slide-right")}
-        href={data.thumbnail.externalLink}
-        target="_blank"
+      <div
+        ref={detailsScrollRef}
+        class="project-detail"
       >
-        <img
-          class={"project-pic js-scroll" + (reverse ? " slide-left" : " slide-right")}
-          src={data.thumbnail.thumbnailUrl}
-          alt={data.title}
-        />
-      </a>
+        <span class="project-title">{data.title}</span>
+        <span class="project-small">{data.description}</span>
+        <span class="project-description">
+          <PillList items={data.stack} />
+        </span>
+      </div>
+      <span  ref={thumbnailScrollRef} class="linked-image">
+        <a
+          href={data.thumbnail.externalLink}
+          target="_blank"
+        >
+          <img
+            class={"project-pic"}
+            src={data.thumbnail.thumbnailUrl}
+            alt={data.title}
+          />
+        </a>
+      </span>
     </div>
   );
 };
