@@ -17,7 +17,7 @@ export const data = {
   hero: {
     title: "Hi, I am Jing Yi",
     tagline:
-      "Software Engineer and Computer Science Undergraduate in my penutilmate year based in Singapore looking for internship (Aug to Dec 2025) and full-time opportunities Jan 2026 onward.",
+      "Software Engineer and Computer Science Undergraduate in my penutilmate year based in Singapore looking for full-time opportunities Jan 2026 onward.",
   },
   workExperience: {
     title: "Work Experience",
