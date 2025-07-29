@@ -1,0 +1,96 @@
+/* Experience Styles */
+
+section h4 {
+    text-align: center;
+}
+
+.experience-section {
+    margin: 50px auto;
+    max-width: 762px;
+    padding: 1.5em 1.8em;
+    font-size: 0.95rem;
+}
+
+.experience-section h4 {
+    margin: 0 0 2.4rem 0;
+}
+
+.experience-section-wrapper {
+    display: flex;
+}
+
+.experience-timeline-line {
+    /* border-right: 0.2rem dotted #e2e5eb; */
+    width: 2px;
+    background: -moz-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%);
+    background: -webkit-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Chrome,Safari4+ */
+    background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%);
+    background: -webkit-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* IE10+ */
+    background: linear-gradient(top, transparent 0%,#e2e5eb 15%,#e2e5eb 75%,transparent 100%); 
+    /* W3C */
+    background: #e2e5eb;
+    margin-right: 2rem;
+}
+
+@keyframes slide-down {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1.6rem;
+}
+
+.experience:last-of-type {
+    margin-bottom: 0;
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    -moz-border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: var(--primary);
+    margin-top: 0.3rem;
+    margin-left: calc(-2rem - 0.2rem - 0.3rem);
+    border: 0.2rem solid #f4f7fa;
+}
+
+.exp-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.exp-duration {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--primary);
+}
+
+.exp-description-list {
+    margin-left: 20px;
+}
+
+.exp-description {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.2rem;
+}

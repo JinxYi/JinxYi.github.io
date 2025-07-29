@@ -1,0 +1,79 @@
+/**
+    Author: Tan Jing Yi
+    File description: Global styles for the website
+ */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--background);
+}
+
+/* three.js */
+
+canvas {
+    position: absolute;
+    top: 40px;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+}
+
+.scrolled.slide-down {
+    animation: slide-down 0.6s ease-in-out both;
+    opacity: 1 !important;
+}
+
+/* Contact Me Section */
+
+.contact-section {
+    /* background: linear-gradient(9deg, var(--black) 85%, transparent 85%); */
+    background: var(--black);
+    color: #fff;
+    padding: 0 0 1.8em;
+}
+
+/* .contact-section .wrapper {
+    margin-top: 1.4em;
+} */
+
+
+
+
+
+
+/* Responsive design */
+@media (max-width: 991.98px) {
+    .hero-wrapper {
+        width: 90%;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    .wrapper {
+        padding: 18px;
+    }
+    
+    .handles {
+        margin-top: 1.4rem;
+    }
+}
+
+@media (max-width: 269px) {
+    body {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .wrapper {
+        padding: 20px
+    }
+}
+
