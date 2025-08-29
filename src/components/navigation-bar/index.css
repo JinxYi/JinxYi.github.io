@@ -10,7 +10,7 @@
 }
 
 .sticky-header {
-  background-color: rgba(244, 247, 250, 0.75);
+  background-color: var(--background-tlc);
   box-shadow: 2px 2px 12px #dfe5ef7e;
   transition: box-shadow, background-color 0.3s;
 }
@@ -33,7 +33,7 @@ header {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 0.1em 0;
-  color: #000;
+  color: var(--primary)
 }
 
 /* nav link */

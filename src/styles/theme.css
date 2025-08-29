@@ -10,8 +10,9 @@
 
 
 /**
-    Import fonts (google)
+    Import fonts
  */
+
 /* Noto Sans JP */
 /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'); */
 /* Noto Sans */
@@ -20,6 +21,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: "Melodrame";
+    src: url(/public/fonts/melodrame/Relationship\ of\ mélodrame.ttf);
+}
+
+@font-face {
+    font-family: "Camiro";
+    src: url(/public/fonts/camiro/Camiro.ttf);
+}
 /**
     Reset styles
     Snippets taken from Eric Meyer's CSS reset
@@ -101,34 +113,36 @@ html {
 }
 
 :root {
-    --black: rgba(3, 1, 4);
-    --primary: rgb(0, 220, 113);
-    --primary-shadow: rgba(24, 216, 123, 0.3);
+    --black: rgb(24, 8, 32);
+    --primary: rgb(29, 53, 173);
+    --primary-shadow: rgb(29, 53, 188, 0.3);
+    --secondary: rgb(243, 155, 109);
     --secondary-shadow: rgba(3, 1, 4, 0.15);
-    --tertiary: rgb(224, 141, 172);
-    --tertiary-shadow: rgba(120, 128, 181, 0.3);
-    --background: rgb(244, 247, 250);
+    --tertiary: rgb(243, 155, 109);
+    --tertiary-shadow: rgb(243, 155, 109, 0.3);
+    --background: rgb(234, 235, 238);
+    --background-tlc: rgb(245, 246, 247, 0.8);
     --theme-border-radius: 1.1em;
 }
 
 
 /* Selection/Highlight styles */
 ::-moz-selection { /* Code for Firefox */
-    color: #fff;
-    background: var(--black);
+    color: var(--background);
+    background: var(--tertiary);
     text-shadow: none;
 }
   
 ::selection {
-    color: #fff;
-    background: var(--black);
+    color: var(--background);
+    background: var(--tertiary);
     text-shadow: none;
 }
 
 
 /*Set default fonts*/
 * {
-    font-family: "Montserrat", "Poppins", "Arial", 
+    font-family: "Montserrat", "Poppins", 
         "Helvetica", "Times New Roman", sans-serif;
 }
 
