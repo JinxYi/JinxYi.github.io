@@ -34,7 +34,7 @@
 }
 
 .custom-shape-divider-top-1684351445 .shape-fill {
-    fill: #F4F7FA;
+    fill: var(--background);
 }
 
 .about-wrapper {

@@ -71,7 +71,7 @@ section h4 {
     background-color: var(--primary);
     margin-top: 0.3rem;
     margin-left: calc(-2rem - 0.2rem - 0.3rem);
-    border: 0.2rem solid #f4f7fa;
+    border: 0.2rem solid var(--background);
 }
 
 .exp-title {

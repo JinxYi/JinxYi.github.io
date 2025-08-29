@@ -5,7 +5,7 @@ export const data = {
       { name: "Experience", href: "#experience" },
       { name: "Skills", href: "#skills" },
       { name: "Projects", href: "#project" },
-      { name: "Contect Me", href: "#about" },
+      { name: "Contact Me", href: "#about" },
       {
         name: "CV",
         target: "_blank",
@@ -15,13 +15,22 @@ export const data = {
     ],
   },
   hero: {
-    title: "Hi, I am Jing Yi",
-    tagline:
-      "Software Engineer and Computer Science Undergraduate in my penutilmate year based in Singapore looking for full-time opportunities Jan 2026 onward.",
+    title: "tanjingyi.",
+    tagline: "This is a collection of work I have done in the past. If anything here resonates with you or sparks a question, I’d be happy to connect."
   },
   workExperience: {
     title: "Work Experience",
     experiences: [
+      {
+        duration: "May 2025 - Aug 2025",
+        title:
+          "API Engineer Intern • Intellectual Property Office of Singapore (IPOS)",
+        descriptions: [
+          "Implemented an automated system using AI prompt engineering with web search tools in Python, increasing operational efficiency for IPOS Officers.",
+          "Deployed an event-driven architecture using Terraform to manage AWS resources such as Lambda and SQS, ensuring consistent, scalable, and secure deployments.",
+          "Automated system deployment using GitLab CI/CD pipelines and templates from SHIP-HATS, ensuring compliance with industry pipeline security practices."
+        ],
+      },
       {
         duration: "Jun 2024 - Dec 2024",
         title:
@@ -35,7 +44,7 @@ export const data = {
       },
       {
         duration: "Aug 2024 - Oct 2024",
-        title: "AidMi • Full-Stack Software Engineer",
+        title: "Full-Stack Software Engineer • AidMi",
         descriptions: [
           "Spearheaded the end-to-end development of a full-feature prototype within 2 months, attracting investors and securing first place at the NUS Social Impact Catalyst Pitch Day.",
           "Collaborated with an AI Engineer to integrate a chatbot for collecting patient medical anecdotes, ensuring seamless data flow for accurate insights to support psychiatric assessments.",
