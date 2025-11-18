@@ -15,7 +15,7 @@ export const data = {
     ],
   },
   hero: {
-    title: "tanjingyi.",
+    title: "Welcome to my space",
     tagline: "This is a collection of work I have done in the past. If anything here resonates with you or sparks a question, I’d be happy to connect."
   },
   workExperience: {
@@ -118,6 +118,17 @@ export const data = {
     },
   ],
   projects: [
+    {
+      title: "Building Deepfake Detection Techniques",
+      description:
+        "As part of my Final Year Project at NTU, I conducted a comparative machine learning study of three frequency-domain feature extraction techniques (FFT, DCT, DWT) for deepfake detection using a consistent ResNet-18 backbone, and found that DWT produced the most discriminative features. I then combined RGB + DWT features and achieved a 0.87 AUC on the WildDeepfake Dataset.",
+      stack: ["Python", "Torch", "Torch Lightning", "Computer Vision (CNNs/ResNet)"],
+      thumbnail: {
+        type: "image",
+        thumbnailUrl: "./images/fyp-deepfake/deepfake-thumbnail.png",
+        externalLink: "https://github.com/JinxYi/deepfake-detection",
+      },
+    },
     {
       title: "AidMi",
       description:

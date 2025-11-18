@@ -114,12 +114,13 @@ html {
 
 :root {
     --black: rgb(24, 8, 32);
+    /* --primary: rgb(77, 145, 185); */
     --primary: rgb(29, 53, 173);
     --primary-shadow: rgb(29, 53, 188, 0.3);
-    --secondary: rgb(243, 155, 109);
-    --secondary-shadow: rgba(3, 1, 4, 0.15);
-    --tertiary: rgb(243, 155, 109);
-    --tertiary-shadow: rgb(243, 155, 109, 0.3);
+    --secondary: rgb(230, 228, 51);
+    --secondary-shadow: rgba(230, 228, 51, 0.15);
+    --tertiary: rgb(202, 103, 109);
+    --tertiary-shadow: rgb(202, 103, 109, 0.3);
     --background: rgb(234, 235, 238);
     --background-tlc: rgb(245, 246, 247, 0.8);
     --theme-border-radius: 1.1em;
@@ -128,14 +129,14 @@ html {
 
 /* Selection/Highlight styles */
 ::-moz-selection { /* Code for Firefox */
-    color: var(--background);
-    background: var(--tertiary);
+    background: var(--secondary);
+    color: var(--tertiary);
     text-shadow: none;
 }
   
 ::selection {
-    color: var(--background);
-    background: var(--tertiary);
+    background: var(--secondary);
+    color: var(--tertiary);
     text-shadow: none;
 }
 
