@@ -6,7 +6,7 @@
 
 .handles a {
     margin-right: 0.7em;
-    color: var(--primary);
+    color: var(--tertiary);
     font-size: 1.5em;
     transition: 0.2s ease-in;
 }

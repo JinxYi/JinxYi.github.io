@@ -31,17 +31,17 @@
   margin-bottom: 1.2rem;
   /* color: var(--primary); */
   /* text-shadow: 2px 2px 10px var(--primary-shadow); */
-  font-family: "Garamound", "Georgia", sans-serif;
+  font-family: "Garamond", "Georgia", sans-serif;
   /* text-transform: lowercase; */
   font-weight: 300;
 }
 
 .hero-tagline {
   margin-bottom: 25px;
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.5em;
   text-shadow: 2px 2px 10px var(--secondary-shadow);
-  font-weight: 500;
+  /* font-weight: 500; */
   /* color: var(--primary); */
   /* font-family: "Garamound", "Georgia", sans-serif; */
 }

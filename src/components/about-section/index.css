@@ -9,14 +9,14 @@
 #contact {
     position: relative;
 }
-.contact-section *::selection {
+/* .contact-section *::selection {
     background-color: #ecf0f3;
     color: var(--black);
 }
 .contact-section *::moz-selection {
     background-color: #ecf0f3;
     color: var(--black);
-}
+} */
 .custom-shape-divider-top-1684351445 {
     position: absolute;
     top: 0;
@@ -50,8 +50,8 @@
     line-height: 2.5rem;
     font-size: 2.5em;
     font-weight: 600;
-    color: var(--primary);
-    text-shadow: 2px 2px 10px var(--primary);
+    color: var(--secondary);
+    text-shadow: 2px 2px 10px var(--secondary);
     margin: 15px 0 2.4rem;
 }
 
